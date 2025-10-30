@@ -1,1 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bleu-clair: #ADD8E6;
+  --dark-indigo: #26265b; 
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--bleu-clair) ;
+  color: white;
+  margin: 0;
+}
+
+.container{
+  text-align: center;
+  margin-top: 25vh ;
+}
+
+h1{
+  display: block;
+  background-color: var(--dark-indigo);
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+#text-input{
+  display: block;
+  margin: 25px auto;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  resize: none;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+#text-input:focus{
+  outline: none;
+  border-color: var(--dark-indigo);
+}
+
+#char-count{
+  justify-content: center;
+  color: var(--dark-indigo);
+}
+
+p{
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 10px auto;
+  overflow: hidden;
+  box-shadow: 0 0 5px #0000001a;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background-color: var(--dark-indigo);
+  border-radius: 5px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
 
